@@ -1,0 +1,8 @@
+.slide {
+    object-position: -100 0;
+    height: 500px;
+}
+
+#rotate {
+    transform: rotate(90deg);
+}

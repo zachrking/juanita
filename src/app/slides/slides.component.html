@@ -1,0 +1,69 @@
+<mat-grid-list cols="6" rowHeight="250px">
+  <mat-grid-tile colspan="6" rowspan="2">
+  <ngb-carousel *ngIf="images">
+    <ng-template ngbSlide>
+      <img class="slide1 slide" [src]="images[0]" alt="Random first slide">
+      <div class="carousel-caption">
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+      <img class="slide2 slide" [src]="images[1]" alt="Random second slide">
+      <div class="carousel-caption">
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+      <img class="slide3 slide" [src]="images[2]" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+      <img class="slide4 slide" [src]="images[3]" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>4th slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+    <img class="slide5 slide" id="rotate" [src]="images[4]" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>5th slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+    <img class="slide6 slide" [src]="images[5]" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>6th slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+    <img class="slide7 slide" [src]="images[6]" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>7th slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>
+
+    <ng-template ngbSlide>
+    <img class="slide8 slide" [src]="images[7]" alt="Random third slide">
+      <div class="carousel-caption">
+        <h3>8th slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </div>
+    </ng-template>  
+  </ngb-carousel>
+  </mat-grid-tile>
+</mat-grid-list>
