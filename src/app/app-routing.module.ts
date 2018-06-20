@@ -1,10 +1,13 @@
 import { NgModule }             from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { NewsComponent } from './news/news.component';
+import { SlidesComponent } from './slides/slides.component';
+import { MusicComponent } from './music/music.component';
+
 
 const routes: Routes = [ 
-  { path: 'news', component: NewsComponent },
+  { path: '', component: SlidesComponent },
+  { path: 'slides', component: SlidesComponent},
+  { path: 'music', component: MusicComponent },
 ];
 
 @NgModule({

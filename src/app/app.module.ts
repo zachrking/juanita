@@ -11,7 +11,7 @@ import { SlidesComponent } from './slides/slides.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import { AppRoutingModule } from './/app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
-import { NewsComponent } from './news/news.component'
+import { MusicComponent } from './music/music.component';
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { NewsComponent } from './news/news.component'
     AppComponent,
     SlidesComponent,
     NavbarComponent,
-    NewsComponent
+    MusicComponent,
   ],
   imports: [
     BrowserModule,
