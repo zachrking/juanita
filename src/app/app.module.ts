@@ -12,6 +12,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { AppRoutingModule } from './/app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MusicComponent } from './music/music.component';
+import { YoutubePlayerModule } from 'ngx-youtube-player';
+
 
 
 @NgModule({
@@ -36,7 +38,8 @@ import { MusicComponent } from './music/music.component';
     MatIconModule,
     MatListModule,
     MatMenuModule,
-    AppRoutingModule  
+    AppRoutingModule,
+    YoutubePlayerModule
   ],
   exports: [
     MatMenuModule,

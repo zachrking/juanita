@@ -1,3 +1,6 @@
-<p>
-  music works!
-</p>
+<youtube-player id="youtube"
+[videoId]="id"
+(ready)="savePlayer($event)"
+(change)="onStateChange($event)">
+</youtube-player>
+
