@@ -1,20 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { MatMenuModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule } from '@angular/material/button';
+import { MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatMenuModule, MatToolbarModule } from '@angular/material';
 import { MatGridListModule } from '@angular/material/grid-list'
-import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { SlidesComponent } from './slides/slides.component';
+import { LayoutModule } from '@angular/cdk/layout';
+import { AppRoutingModule } from './/app-routing.module';
+import { NavbarComponent } from './navbar/navbar.component';
+import { NewsComponent } from './news/news.component'
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SlidesComponent,
+    NavbarComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -25,14 +30,20 @@ import { SlidesComponent } from './slides/slides.component';
     MatToolbarModule,
     NgbModule.forRoot(),
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    LayoutModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    MatMenuModule,
+    AppRoutingModule  
   ],
   exports: [
     MatMenuModule,
-    BrowserAnimationsModule,
     MatButtonModule,
     MatGridListModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

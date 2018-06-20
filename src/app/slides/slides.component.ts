@@ -5,7 +5,7 @@ import { map } from 'rxjs/operators';
 @Component({
   selector: 'app-slides',
   templateUrl: './slides.component.html',
-  styleUrls: ['./slides.component.css']
+  styleUrls: ['./slides.component.scss']
 })
 export class SlidesComponent implements OnInit {
 

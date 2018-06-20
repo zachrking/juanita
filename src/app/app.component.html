@@ -1,48 +1,5 @@
-<button mat-button [matMenuTriggerFor]="home">Home</button>
-  <mat-menu #home="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
 
-<button mat-button [matMenuTriggerFor]="about">About</button>
-  <mat-menu #about="matMenu">
-    <button mat-menu-item>Item 1</button>
-    <button mat-menu-item>Item 2</button>
-  </mat-menu>
-
-<button mat-button [matMenuTriggerFor]="listen">Listen</button>
-  <mat-menu #listen="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
-
-<button mat-button [matMenuTriggerFor]="store">Store</button>
-  <mat-menu #store="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
-
-<button mat-button [matMenuTriggerFor]="contact">Contact</button>
-<mat-menu #contact="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
-</mat-menu>
-
-<mat-toolbar>
-  <span>Juanita Ulloa</span>
-</mat-toolbar>
-
+<navbar></navbar> 
 <app-slides></app-slides>
-
-<mat-grid-list cols="6" rowHeight="250px">
-  <mat-grid-tile colspan="2" rowspan="1">
-    <div>This will be some info you want to put on the home page. This area can include links to other pages and content.</div>
-  </mat-grid-tile>
-  <mat-grid-tile colspan="2" rowspan="1">
-    <div>This will be some info you want to put on the home page.</div>
-  </mat-grid-tile>  
-  <mat-grid-tile colspan="2" rowspan="1">
-    <div>This will be some info you want to put on the home page.</div>
-  </mat-grid-tile>
-</mat-grid-list>
+<router-outlet></router-outlet>
 
