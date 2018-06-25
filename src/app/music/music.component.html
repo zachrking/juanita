@@ -1,6 +1,53 @@
-<youtube-player id="youtube"
-[videoId]="id"
-(ready)="savePlayer($event)"
-(change)="onStateChange($event)">
-</youtube-player>
+
+
+<mat-grid-list cols="6" rowHeight="250px">
+    <mat-grid-tile colspan="2" rowspan="2">
+        <mat-card class="card-back">  
+            <mat-card-content>
+                <youtube-player id="youtube"
+                    [videoId]= id[0]
+                    (ready)="savePlayer($event)"
+                    (change)="onStateChange($event)">
+                </youtube-player>
+            </mat-card-content>
+            <mat-card-actions>
+                <button color="accent" mat-raised-button>Buy <mat-icon color="primary">arrow_downward</mat-icon></button>
+                <button color="accent" mat-raised-button>Share  <mat-icon color="primary">share</mat-icon></button>
+            </mat-card-actions>
+        </mat-card>  
+    </mat-grid-tile>    
+
+    <mat-grid-tile colspan="2" rowspan="2">
+        <mat-card class="card-back">  
+            <mat-card-content>
+                <youtube-player id="youtube"
+                    [videoId]= id[1]
+                    (ready)="savePlayer($event)"
+                    (change)="onStateChange($event)">
+                </youtube-player>
+            </mat-card-content>
+            <mat-card-actions>
+                <button color="accent" mat-raised-button>Buy <mat-icon color="primary">arrow_downward</mat-icon></button>
+                <button color="accent" mat-raised-button>Share  <mat-icon color="primary">share</mat-icon></button>
+            </mat-card-actions>
+        </mat-card> 
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="2" rowspan="2">
+        <mat-card class="card-back">  
+            <mat-card-content>
+                <youtube-player id="youtube"
+                    [videoId]= id[2]
+                    (ready)="savePlayer($event)"
+                    (change)="onStateChange($event)">
+                </youtube-player>
+            </mat-card-content>
+            <mat-card-actions>
+                <button color="accent" mat-raised-button>Buy <mat-icon color="primary">arrow_downward</mat-icon></button>
+                <button color="accent" mat-raised-button>Share  <mat-icon color="primary">share</mat-icon></button>
+            </mat-card-actions>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list>
+
 

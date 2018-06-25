@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatSidenavModule, MatIconModule, MatListModule, MatMenuModule, MatToolbarModule } from '@angular/material';
+import { MatButtonModule, MatSidenavModule, MatListModule, MatMenuModule, MatToolbarModule, MatCardModule, MatIconModule } from '@angular/material';
 import { MatGridListModule } from '@angular/material/grid-list'
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
@@ -39,14 +39,16 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
     MatListModule,
     MatMenuModule,
     AppRoutingModule,
-    YoutubePlayerModule
+    YoutubePlayerModule,
+    MatCardModule,
   ],
   exports: [
     MatMenuModule,
     MatButtonModule,
     MatGridListModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

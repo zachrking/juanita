@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 
+
 @Component({
   selector: 'app-music',
   templateUrl: './music.component.html',
@@ -9,7 +10,7 @@ import { Component, OnInit } from '@angular/core';
 export class MusicComponent implements OnInit {
   
   player: YT.Player;
-  private id: string = 'qDuKsiwS5xw';
+  private id: Array<string> = ['QUXTr2Sf4Ik', 'KDbSLFdH1N4', 'VavEYvjbon0'];
 
   savePlayer(player) {
     this.player = player;
@@ -20,7 +21,7 @@ export class MusicComponent implements OnInit {
   }
 
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() { }
 
