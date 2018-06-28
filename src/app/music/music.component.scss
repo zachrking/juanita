@@ -1,9 +1,27 @@
 #youtube {
-    width: 500px;
-    
+    width: 100%;  
 }
 
 .card-back {
-    background-color: white;
+    background-color: #008432;
     text-align: center;
+    width: 75%;
+}
+.card-head {
+    background-color: white;
+    color: #CE1126;
+    height: 10%
+}
+
+.search-results {
+    height: 100% ;
+}
+.card-content {
+    height: 600px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .card-content {
+        height: 300px;
+    }
 }

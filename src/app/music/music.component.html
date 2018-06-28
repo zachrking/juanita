@@ -1,53 +1,24 @@
+<div class="search-results"
+    infiniteScroll
+    scrollWindow = "true"
+    infiniteScrollDistance="2"
+    infiniteScrollThrottle="1000"
+    (scrolled)="onScroll()">
 
-
-<mat-grid-list cols="6" rowHeight="250px">
-    <mat-grid-tile colspan="2" rowspan="2">
-        <mat-card class="card-back">  
-            <mat-card-content>
-                <youtube-player id="youtube"
-                    [videoId]= id[0]
-                    (ready)="savePlayer($event)"
-                    (change)="onStateChange($event)">
-                </youtube-player>
+    <mat-grid-list cols="12" rowHeight="270px">
+        <mat-grid-tile colspan="12" rowspan="3" *ngFor="let video of videos1" >
+            <mat-card class='card-back'>
+                <mat-card-header class='card-head'>{{video.title}}</mat-card-header>
+                <br>
+            <mat-card-content class="card-content">
+                <iframe width="100%" height="100%" [src]="video.video | youtube" frameborder="0" allowfullscreen encrypted-media></iframe>
             </mat-card-content>
             <mat-card-actions>
                 <button color="accent" mat-raised-button>Buy <mat-icon color="primary">arrow_downward</mat-icon></button>
-                <button color="accent" mat-raised-button>Share  <mat-icon color="primary">share</mat-icon></button>
             </mat-card-actions>
-        </mat-card>  
-    </mat-grid-tile>    
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
 
-    <mat-grid-tile colspan="2" rowspan="2">
-        <mat-card class="card-back">  
-            <mat-card-content>
-                <youtube-player id="youtube"
-                    [videoId]= id[1]
-                    (ready)="savePlayer($event)"
-                    (change)="onStateChange($event)">
-                </youtube-player>
-            </mat-card-content>
-            <mat-card-actions>
-                <button color="accent" mat-raised-button>Buy <mat-icon color="primary">arrow_downward</mat-icon></button>
-                <button color="accent" mat-raised-button>Share  <mat-icon color="primary">share</mat-icon></button>
-            </mat-card-actions>
-        </mat-card> 
-    </mat-grid-tile>
-
-    <mat-grid-tile colspan="2" rowspan="2">
-        <mat-card class="card-back">  
-            <mat-card-content>
-                <youtube-player id="youtube"
-                    [videoId]= id[2]
-                    (ready)="savePlayer($event)"
-                    (change)="onStateChange($event)">
-                </youtube-player>
-            </mat-card-content>
-            <mat-card-actions>
-                <button color="accent" mat-raised-button>Buy <mat-icon color="primary">arrow_downward</mat-icon></button>
-                <button color="accent" mat-raised-button>Share  <mat-icon color="primary">share</mat-icon></button>
-            </mat-card-actions>
-        </mat-card>
-    </mat-grid-tile>
-</mat-grid-list>
-
+</div>
 

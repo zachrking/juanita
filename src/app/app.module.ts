@@ -12,7 +12,8 @@ import { LayoutModule } from '@angular/cdk/layout';
 import { AppRoutingModule } from './/app-routing.module';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MusicComponent } from './music/music.component';
-import { YoutubePlayerModule } from 'ngx-youtube-player';
+import { YoutubePipe } from './youtube.pipe';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
 
@@ -22,6 +23,7 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
     SlidesComponent,
     NavbarComponent,
     MusicComponent,
+    YoutubePipe,
   ],
   imports: [
     BrowserModule,
@@ -39,8 +41,8 @@ import { YoutubePlayerModule } from 'ngx-youtube-player';
     MatListModule,
     MatMenuModule,
     AppRoutingModule,
-    YoutubePlayerModule,
     MatCardModule,
+    InfiniteScrollModule
   ],
   exports: [
     MatMenuModule,
