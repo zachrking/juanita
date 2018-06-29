@@ -14,6 +14,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MusicComponent } from './music/music.component';
 import { YoutubePipe } from './youtube.pipe';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 
 
@@ -42,7 +43,8 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
     MatMenuModule,
     AppRoutingModule,
     MatCardModule,
-    InfiniteScrollModule
+    InfiniteScrollModule,
+    FlexLayoutModule,
   ],
   exports: [
     MatMenuModule,

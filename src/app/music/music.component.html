@@ -1,12 +1,13 @@
+<br>
 <div class="search-results"
     infiniteScroll
     scrollWindow = "true"
     infiniteScrollDistance="2"
-    infiniteScrollThrottle="1000"
+    infiniteScrollThrottle="500"
     (scrolled)="onScroll()">
 
-    <mat-grid-list cols="12" rowHeight="270px">
-        <mat-grid-tile colspan="12" rowspan="3" *ngFor="let video of videos1" >
+    <mat-grid-list #grid rowHeight="1:1">
+        <mat-grid-tile *ngFor="let video of videos1" >
             <mat-card class='card-back'>
                 <mat-card-header class='card-head'>{{video.title}}</mat-card-header>
                 <br>

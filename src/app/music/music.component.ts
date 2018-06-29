@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { MatGridList } from '@angular/material';
+import { MediaChange, ObservableMedia } from '@angular/flex-layout';
+
 
 
 
@@ -8,8 +11,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./music.component.scss']
 })
 export class MusicComponent implements OnInit {
+  @ViewChild('grid') grid: MatGridList;
+
+  gridByBreakpoint = {
+    xl: 6,
+    lg: 3,
+    md: 3,
+    sm: 2,
+    xs: 1
+  }
   
   videoCount : number = 0;
+
+  breakpoint: number;
 
   videos1: any[] = [
     {
@@ -119,8 +133,15 @@ export class MusicComponent implements OnInit {
     else return;
   }
 
-  constructor() {}
+  constructor(private observableMedia: ObservableMedia) {}
 
-  ngOnInit() { }
+  ngAfterContentInit() {
+    this.observableMedia.asObservable().subscribe((change: MediaChange) => {
+      this.grid.cols = this.gridByBreakpoint[change.mqAlias];
+    });
+  }
+
+  ngOnInit() {
+  }
 
 }
