@@ -1,6 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { MatGridList } from '@angular/material';
 import { MediaChange, ObservableMedia } from '@angular/flex-layout';
+import { NgxSpinnerService } from 'ngx-spinner';
 
 
 
@@ -22,7 +23,6 @@ export class MusicComponent implements OnInit {
   }
   
   videoCount : number = 0;
-
   breakpoint: number;
 
   videos1: any[] = [
@@ -50,11 +50,11 @@ export class MusicComponent implements OnInit {
       title: 'Malaguena Salerosa',
       video: 'https://www.youtube.com/embed/1ONWFsijEos'
     },
-
   ]
 
   onScroll() {
     console.log('scrolled!!');
+    this.spinner.show();
 
     if (this.videoCount <= 5) {
       this.addVideos()
@@ -62,6 +62,11 @@ export class MusicComponent implements OnInit {
   }
 
   addVideos() {
+
+    setTimeout(() => {
+      /** spinner ends after 5 seconds */
+        this.spinner.hide();
+        }, 2000);
 
     this.videoCount ++;
 
@@ -133,7 +138,7 @@ export class MusicComponent implements OnInit {
     else return;
   }
 
-  constructor(private observableMedia: ObservableMedia) {}
+  constructor(private observableMedia: ObservableMedia, private spinner: NgxSpinnerService) {}
 
   ngAfterContentInit() {
     this.observableMedia.asObservable().subscribe((change: MediaChange) => {
@@ -142,6 +147,13 @@ export class MusicComponent implements OnInit {
   }
 
   ngOnInit() {
+  /** spinner starts on init */
+  this.spinner.show();
+
+  setTimeout(() => {
+  /** spinner ends after 5 seconds */
+    this.spinner.hide();
+    }, 3000);
   }
 
 }

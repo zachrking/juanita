@@ -15,6 +15,7 @@ import { MusicComponent } from './music/music.component';
 import { YoutubePipe } from './youtube.pipe';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgxSpinnerModule } from 'ngx-spinner';
 
 
 
@@ -45,6 +46,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     InfiniteScrollModule,
     FlexLayoutModule,
+    NgxSpinnerModule
   ],
   exports: [
     MatMenuModule,

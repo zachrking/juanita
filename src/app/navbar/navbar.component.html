@@ -1,6 +1,24 @@
-<mat-toolbar color="primary">
-  <h1>Juanita Ulloa</h1>
-  <button mat-raised-button color="primary" routerLink="/slides" class="button">Home</button>
-  <button mat-raised-button color="primary" routerLink="/music" class="button">Music</button>
-  <button mat-raised-button color="primary" class="button">Store</button>
-</mat-toolbar>
+
+
+<nav #nav class="navbar navbar-expand-lg">
+  Juanita Ulloa
+
+  <button class="navbar-toggler" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
+    <ul class="navbar-nav mr-auto">
+      <li>
+        <button mat-raised-button color="accent" routerLink="/slides" class="button">Home</button>
+      </li>
+      <li>
+        <button mat-raised-button color="accent" routerLink="/music" class="button">Music</button>
+      </li>
+      <li>
+        <button mat-raised-button color="accent" routerLink="" class="button">Store</button>
+      </li>
+    </ul>
+  </div>
+</nav>

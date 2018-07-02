@@ -1,6 +1,8 @@
+
 .slide {
     object-position: -100 0;
-    height: 500px;
+    text-align: center;
+    width: 85%;
 }
 
 #rotate {
@@ -10,3 +12,22 @@
     outline:0px !important;
 }
 
+.mainSlideContainer {
+    background-color: black;
+}
+
+#topTransperency {
+    height: 1000px;
+    width: 100vw;
+    background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
+    background-position: fill;
+    opacity: 50%;
+}
+.article {
+    background-color: black;
+    color: white;
+    border: 5px solid #8AD562;
+    border-radius: 5%;
+    max-width: 30%;
+    text-align: center;
+}

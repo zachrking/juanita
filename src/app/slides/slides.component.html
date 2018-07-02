@@ -1,4 +1,5 @@
-<mat-grid-list cols="6" rowHeight="250px">
+<mat-grid-list class="mainSlideContainer"cols="6" rowHeight="250px">
+  <div id="topTransperency">
   <mat-grid-tile colspan="6" rowspan="2">
   
   <ngb-carousel *ngIf="images">
@@ -68,14 +69,16 @@
   </ngb-carousel>
   </mat-grid-tile>
 
-  <mat-grid-tile colspan="2" rowspan="1">
+  <mat-grid-tile class="article" colspan="2" rowspan="1">
     <div>This will be some info you want to put on the home page. This area can include links to other pages and content.</div>
   </mat-grid-tile>
-  <mat-grid-tile colspan="2" rowspan="1">
+  <mat-grid-tile class="article" colspan="2" rowspan="1">
     <div>This will be some info you want to put on the home page.</div>
   </mat-grid-tile>  
-  <mat-grid-tile colspan="2" rowspan="1">
+  <mat-grid-tile class="article" colspan="2" rowspan="1">
     <div>This will be some info you want to put on the home page.</div>
   
-  </mat-grid-tile>
+  </mat-grid-tile> 
+  </div>
 </mat-grid-list>
+
