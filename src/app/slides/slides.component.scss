@@ -1,8 +1,59 @@
+// .ngb-carousel {
+//     height: 720px;
+// }
+.slide1.slide {
+    width: 90%;
+}
+.slide2.slide {
+    width: 40%;
+}
+.slide3.slide {
+    width: 50%;
+}
 
+.slide6.slide {
+    width: 40%;
+}
+.slide7.slide {
+    width: 40%;
+}
+.slide8.slide {
+    width: 40%;
+}
 .slide {
-    object-position: -100 0;
+    object-position: +100 0;
     text-align: center;
-    width: 85%;
+    width: 80%;
+
+}
+
+@media only screen and (max-width: 720px) {
+    .slide1.slide {
+        width: 500px;
+    }
+    .slide2.slide {
+        width: 100%;
+    }
+    .slide3.slide {
+        width: 100%;
+    }
+    .slide4.slide {
+        width: 100%;
+    }
+    .slide5.slide {
+        object-position: -100;
+        width: 100%;
+    }
+    .slide6.slide {
+        width: 100%;
+    }
+    .slide7.slide {
+        width: 100%;
+    }
+    .slide8.slide {
+        width: 100%;
+    }
+
 }
 
 #rotate {

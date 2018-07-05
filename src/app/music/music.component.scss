@@ -6,16 +6,19 @@
 
 .card-back {
     text-align: center;
-    background-color: #8AD562;
+    background-color: black;
+    border: 3px solid #B9D222;
+    border-radius: 5px;
 
 }
 
 .search-results {
-    height: 100% ;
+    height: 10% ;
     background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
 }
 
 .card-head {
+    
     color: black;
 }
 
