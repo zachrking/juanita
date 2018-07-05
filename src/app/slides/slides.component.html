@@ -1,7 +1,5 @@
-<mat-grid-list class="mainSlideContainer" cols="6" rowHeight="300px">
-  <div id="topTransperency">
-  <mat-grid-tile colspan="6" rowspan="2">
-  
+
+<div id="mainSlideContainer">
   <ngb-carousel *ngIf="images">
     <ng-template ngbSlide>
       <img class="slide1 slide" [src]="images[0]" alt="Random first slide">
@@ -67,18 +65,25 @@
       </div>
     </ng-template>  
   </ngb-carousel>
-  </mat-grid-tile>
 
-  <mat-grid-tile class="article" colspan="2" rowspan="1">
+
+<mat-grid-list #grid rowHeight="1:1">
+  <mat-grid-tile class="article">
     <div>This will be some info you want to put on the home page. This area can include links to other pages and content.</div>
   </mat-grid-tile>
-  <mat-grid-tile class="article" colspan="2" rowspan="1">
+    
+  <mat-grid-tile class="article">
     <div>This will be some info you want to put on the home page.</div>
   </mat-grid-tile>  
-  <mat-grid-tile class="article" colspan="2" rowspan="1">
+
+  <mat-grid-tile class="article">
     <div>This will be some info you want to put on the home page.</div>
-  
   </mat-grid-tile> 
-  </div>
 </mat-grid-list>
+</div>
+
+
+
+
+
 

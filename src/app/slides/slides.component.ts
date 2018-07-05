@@ -1,6 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { map } from 'rxjs/operators';
+import { MatGridList } from '@angular/material';
+import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 
 @Component({
   selector: 'app-slides',
@@ -8,10 +10,20 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./slides.component.scss']
 })
 export class SlidesComponent implements OnInit {
+  @ViewChild('grid') grid: MatGridList;
 
+  gridByBreakpoint = {
+    xl: 6,
+    lg: 3,
+    md: 3,
+    sm: 2,
+    xs: 1
+  }
+
+  breakpoint: number;
   images: Array<string>;
 
-  constructor(private _http: HttpClient) {}
+  constructor(private _http: HttpClient, private observableMedia: ObservableMedia,) {}
 
   ngOnInit() {
     this.images = ["../assets/Images/JuanitaPhotos/juanitaLrg.jpg",
@@ -22,6 +34,12 @@ export class SlidesComponent implements OnInit {
     "../assets/Images/JuanitaPhotos/Juanita La risa natural.jpg",
     "../assets/Images/JuanitaPhotos/Juanita_goesfree 1400.jpeg",
     "../assets/Images/JuanitaPhotos/Xmas foto JU.jpeg"]
+  }
+  
+  ngAfterContentInit() {
+    this.observableMedia.asObservable().subscribe((change: MediaChange) => {
+      this.grid.cols = this.gridByBreakpoint[change.mqAlias];
+    });
   }
 
 }

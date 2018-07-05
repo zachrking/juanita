@@ -5,25 +5,30 @@
     width: 90%;
 }
 .slide2.slide {
-    width: 40%;
+    width: 30%;
 }
 .slide3.slide {
     width: 50%;
 }
-
+.slide4.slide {
+    width: 60%;
+}
+.slide5.slide {
+    width: 60%;
+}
 .slide6.slide {
-    width: 40%;
+    width: 30%;
 }
 .slide7.slide {
-    width: 40%;
+    width: 30%;
 }
 .slide8.slide {
-    width: 40%;
+    width: 30%;
 }
 .slide {
     object-position: +100 0;
     text-align: center;
-    width: 80%;
+    width: 100%;
 
 }
 
@@ -32,7 +37,7 @@
         width: 500px;
     }
     .slide2.slide {
-        width: 100%;
+        width: 75%;
     }
     .slide3.slide {
         width: 100%;
@@ -45,13 +50,13 @@
         width: 100%;
     }
     .slide6.slide {
-        width: 100%;
+        width: 75%;
     }
     .slide7.slide {
-        width: 100%;
+        width: 75%;
     }
     .slide8.slide {
-        width: 100%;
+        width: 75%;
     }
 
 }
@@ -63,22 +68,28 @@
     outline:0px !important;
 }
 
-.mainSlideContainer {
-    background-color: black;
+img {
+    text-align: center;
+}
+
+#mainSlideContainer {
+    background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
+    background-position: fill;
+    background-repeat: repeat-y;
 }
 
 #topTransperency {
-    height: 1000px;
+    height: 100vh;
     width: 100vw;
     background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
     background-position: fill;
+    background-repeat: repeat-y;
     opacity: 50%;
 }
 .article {
     background-color: black;
     color: white;
-    border: 5px solid #8AD562;
+    border: 3px solid #b9d222;
     border-radius: 5%;
-    max-width: 30%;
     text-align: center;
 }
