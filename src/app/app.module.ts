@@ -16,6 +16,7 @@ import { YoutubePipe } from './youtube.pipe';
 import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxSpinnerModule } from 'ngx-spinner';
+import { StoreComponent } from './store/store.component';
 
 
 
@@ -26,6 +27,7 @@ import { NgxSpinnerModule } from 'ngx-spinner';
     NavbarComponent,
     MusicComponent,
     YoutubePipe,
+    StoreComponent,
   ],
   imports: [
     BrowserModule,
