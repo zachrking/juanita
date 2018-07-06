@@ -1,40 +1,60 @@
 // .ngb-carousel {
 //     height: 720px;
 // }
+
 .slide1.slide {
-    width: 90%;
-}
-.slide2.slide {
-    width: 30%;
-}
-.slide3.slide {
     width: 50%;
 }
+.slide2.slide {
+    width: 20%;
+}
+.slide3.slide {
+    width: 40%;
+}
 .slide4.slide {
-    width: 60%;
+    width: 40%;
 }
 .slide5.slide {
-    width: 60%;
+    width: 30%;
 }
 .slide6.slide {
-    width: 30%;
+    width: 20%;
 }
 .slide7.slide {
-    width: 30%;
+    width: 20%;
 }
 .slide8.slide {
-    width: 30%;
+    width: 20%;
 }
 .slide {
     object-position: +100 0;
     text-align: center;
-    width: 100%;
+    background-color: black;
+    border: 3px;
+    border-radius: 5px;
+    color: white;
 
+}
+.carouselContainer {
+    padding: 100px;
+    height: 100%;
+}
+
+.blurb {
+    background-color: black;
+    color: white;
+    border: 3px solid #b9d222;
+    border-radius: 5px;
+    text-align: center;
+    width: 100%;
 }
 
 @media only screen and (max-width: 720px) {
+    .carouselContainer {
+        padding: 25px;
+    }
     .slide1.slide {
-        width: 500px;
+        width: 100%;
     }
     .slide2.slide {
         width: 75%;
@@ -76,6 +96,7 @@ img {
     background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
     background-position: fill;
     background-repeat: repeat-y;
+    height: 550px;
 }
 
 #topTransperency {
@@ -90,6 +111,6 @@ img {
     background-color: black;
     color: white;
     border: 3px solid #b9d222;
-    border-radius: 5%;
+    border-radius: 5px;
     text-align: center;
 }
