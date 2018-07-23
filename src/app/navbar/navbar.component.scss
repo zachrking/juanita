@@ -1,3 +1,12 @@
+h2 {
+  margin-bottom: 0;
+}
+.headers {
+  text-align: center;
+  background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
+  background-size: 60%;
+  color: white;
+}
 .sidenav-container {
   height: 100%;
 }
@@ -10,22 +19,35 @@
 .button {
   outline: none;
   border: none !important;
-  margin: 10px;
+  margin: 5px 10px;
+  width: 150px;
+  // background-image: url("../../assets/Images/JuanitaPhotos/ivan-jevtic-rose.jpg");
+  // background-size: 275%;
+  // background-position: center;
+  background-color: green;
+  color: white;
+  font-size: 1.5em;
+  padding: 5px 20px;
+}
+
+.buttonImageResize {
+  height: 30px;
 }
 
 a {
   color: white;
 }
-.navbar.navbar-expand-lg{
-  background-color: #339131;
+.navbar.navbar-expand-lg {
   text-align: center;
-  color: black;
+  color: white;
+}
+
+.navbar-toggler-icon {
+  float: right !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 
-.button {
-  width: 75%;
-}
 
 
 

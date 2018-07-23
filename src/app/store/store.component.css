@@ -1,0 +1,9 @@
+.bodyContainer {
+    height: 100vh;
+    background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
+    background-repeat: repeat-y;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

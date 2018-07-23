@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
 import { MatGridList } from '@angular/material';
 import { MediaChange, ObservableMedia } from '@angular/flex-layout';
 
@@ -35,11 +34,11 @@ export class SlidesComponent implements OnInit {
     "../assets/Images/JuanitaPhotos/Juanita_goesfree 1400.jpeg",
     "../assets/Images/JuanitaPhotos/Xmas foto JU.jpeg"]
   }
-  
-  ngAfterContentInit() {
-    this.observableMedia.asObservable().subscribe((change: MediaChange) => {
-      this.grid.cols = this.gridByBreakpoint[change.mqAlias];
-    });
+
+  // ngAfterContentInit() {
+  //   this.observableMedia.asObservable().subscribe((change: MediaChange) => {
+  //     this.grid.cols = this.gridByBreakpoint[change.mqAlias];
+  //   });
   }
 
 }

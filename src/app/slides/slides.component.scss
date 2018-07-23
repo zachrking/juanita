@@ -1,81 +1,43 @@
 
-.slide1.slide {
-    width: 50%;
-}
-.slide2.slide {
-    width: 20%;
-}
-.slide3.slide {
-    width: 40%;
-}
-.slide4.slide {
-    width: 40%;
-}
-.slide5.slide {
-    width: 30%;
-}
-.slide6.slide {
-    width: 20%;
-}
-.slide7.slide {
-    width: 20%;
-}
-.slide8.slide {
-    width: 20%;
-}
+// .carousel-indicators {
+//     position: relative !important;
+// }
+// .slide1.slide {
+//     height: 400px;
+// }
+// .slide2.slide {
+//     height: 400px;
+// }
+// .slide3.slide {
+//     width: 40%;
+// }
+// .slide4.slide {
+//     width: 40%;
+// }
+// .slide5.slide {
+//     width: 30%;
+// }
+// .slide6.slide {
+//     width: 20%;
+// }
+// .slide7.slide {
+//     width: 20%;
+// }
+// .slide8.slide {
+//     width: 20%;
+// }
 .slide {
-    object-position: +100 0;
-    text-align: center;
-    background-color: black;
-    border: 3px;
-    border-radius: 5px;
-    color: white;
 
-}
-.carouselContainer {
-    padding: 100px;
-    height: 100%;
+    background-image: url("../../assets/Images/JuanitaPhotos/dj-paine-565506-unsplash.jpg");
+    background-size: cover;
+    background-position-y: -70px;
+    height: 500px; 
+    text-align: center;
+    color: white;
 }
 
-.blurb {
-    background-color: black;
-    color: white;
-    border: 3px solid #b9d222;
-    border-radius: 5px;
-    text-align: center;
+ngb-carosel {
     width: 100%;
-}
-
-@media only screen and (max-width: 720px) {
-    .carouselContainer {
-        padding: 25px;
-    }
-    .slide1.slide {
-        width: 100%;
-    }
-    .slide2.slide {
-        width: 45%;
-    }
-    .slide3.slide {
-        width: 100%;
-    }
-    .slide4.slide {
-        width: 100%;
-    }
-    .slide5.slide {
-        object-position: -100;
-        width: 100%;
-    }
-    .slide6.slide {
-        width: 45%;
-    }
-    .slide7.slide {
-        width: 45%;
-    }
-    .slide8.slide {
-        width: 45%;
-    }
-
 }
 
 #rotate {
@@ -88,34 +50,63 @@
 img {
     text-align: center;
 }
+//     background-repeat: repeat-y;
+//     -webkit-background-size: cover;
+//     -moz-background-size: cover;
+//     -o-background-size: cover;
+//     background-size: cover;
 
-#mainSlideContainer {
-    background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
-    background-repeat: repeat-y;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+// #topTransperency {
+//     height: 100vh;
+//     width: 100vw;
+//     //background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
+//     background-position: fill;
+//     background-repeat: repeat-y;
+//     opacity: 50%;
 
-#topTransperency {
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../../assets/Images/JuanitaPhotos/rose-tile.jpg");
-    background-position: fill;
-    background-repeat: repeat-y;
-    opacity: 50%;
-}
 .article {
     background-color: black;
     color: white;
-    border: 3px solid #b9d222;
-    border-radius: 5px;
+    // border: 3px solid #b9d222;
+    // border-radius: 5px;
 }
-.gridContainer {
-    margin-left: 50px;
-    margin-right: 50px;
-}
+// .gridContainer {
+//     margin-left: 50px;
+//     margin-right: 50px;
+//}
 .mat-figure {
     padding: 5px;
+}
+.gridContainer {
+    display: block;
+    height: 200px;
+}
+
+.carousel-caption {
+    padding-bottom: 0px;
+    bottom: 0px;
+}
+// .carousel-indicators li {
+//     height: 0px !important;
+// }
+
+@media only screen and (max-width: 858px) {
+
+    .slide {
+        background-position-y: -60px;
+        height: 350px;
+        background-size: 110%;
+    }
+    .slide5 {
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 568px) {
+    .slide {
+        background-position-y: -55px;
+        background-size: 170%;
+    }
+    .slide5 {
+        height: 350px;
+    }
 }
