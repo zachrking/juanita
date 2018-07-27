@@ -15,23 +15,7 @@ ol {
     margin-bottom: 0px !important;
 }
 
-@media only screen and (max-width: 858px) {
 
-    .slide {
-        background-position-y: -50px;
-        height: 350px;
-        background-size: 110%;
-    }
-    .slide5 {
-        height: 235px;
-    }
-}
-@media only screen and (max-width: 490px) {
-    .slide {
-        background-position-y: -35px;
-        background-size: 120%;
-    }
-}
 
 // /* Begin line-clamp CSS. */
 // .line-clamp
