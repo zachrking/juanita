@@ -16,13 +16,13 @@ type="ball-clip-rotate">
     <mat-grid-list #grid rowHeight="1:1" >
         <mat-grid-tile *ngFor="let video of videos1" >
             <mat-card class='card-back'>
-                <mat-card-header class='card-head' color="accent">{{video.title}}</mat-card-header>
+                <mat-card-header class='card-head' color="accent"></mat-card-header>
                 <br>
                 <mat-card-content color="primary">
                     <iframe width="100%" height="100%" [src]="video.video | youtube" frameborder="0" allowfullscreen encrypted-media></iframe>
                 </mat-card-content>
                 <mat-card-actions>
-                <button color="accent" mat-raised-button>Buy <mat-icon>arrow_downward</mat-icon></button>
+                <button mat-raised-button>Buy <mat-icon>arrow_downward</mat-icon></button>
                 </mat-card-actions>
             </mat-card>
         </mat-grid-tile>
