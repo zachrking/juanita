@@ -4,11 +4,19 @@
 }
 
 .mat-grid-tile {
-    border-bottom: 5px solid black;
-    display: block;
+    border-bottom: 3px solid #006847;
 }
 
 .albumImage {
     height: 100px;
     width: 100px;
+}
+
+.italic {
+    bottom: 0;
+    position: absolute;
+    align-items: center;
+    display: initial;
+    justify-content: center;
+    font-style: italic;
 }

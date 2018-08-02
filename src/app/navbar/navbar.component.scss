@@ -40,18 +40,21 @@ h2 {
   outline: none;
   border: none !important;
   margin: 5px 10px;
-  width: 150px;
+  width: 200px;
   // background-image: url("../../assets/Images/JuanitaPhotos/ivan-jevtic-rose.jpg");
   // background-size: 275%;
   // background-position: center;
-  background-color: #CE1126;
-  color: black;
-  font-size: 1.5em;
+  background-color: black;
+  color: #CE1126;
+  font-size: 2em;
   padding: 5px 20px;
+  font-family: 'Della Respira';
 }
 
 .buttonImageResize {
   height: 30px;
+  margin: 10px;
+  left: 5px;
 }
 
 a {
@@ -69,6 +72,11 @@ a {
   float: right !important;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
+
+span.mat-button-wrapper {
+  padding: 4px;
+}
+
 
 
 
