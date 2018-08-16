@@ -27,7 +27,7 @@ export class SlidesComponent implements OnInit {
   ngOnInit() {
     this.images = ["../assets/Images/JuanitaPhotos/juanitaLrg.jpg",
     "../assets/Images/JuanitaPhotos/headshot2009greendrss.jpeg",
-    "../assets/Images/JuanitaPhotos/Grito_JU y mariachi Cuauhtemoc.JPG",
+    "../assets/Images/JuanitaPhotos/Juanita Cover head shot 2012 copia.jpg",
     "../assets/Images/JuanitaPhotos/IMG_1342.jpeg",
     "../assets/Images/JuanitaPhotos/J Ulloa sausalito 2.jpeg",
     "../assets/Images/JuanitaPhotos/Juanita La risa natural.jpg",

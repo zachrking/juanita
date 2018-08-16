@@ -30,7 +30,7 @@
 
     background-image: url("../../assets/Images/JuanitaPhotos/dj-paine-565507-unsplash.jpg");
     background-size: cover;
-    background-position-y: -70px;
+    background-position-y: -100px;
     height: 500px; 
     text-align: center;
     color: white;
@@ -78,11 +78,18 @@ img {
     padding: 5px;
 }
 .gridContainer {
-    margin-left: 15px;
-    display: block;
-    height: 1000px;
+    height: 100vh;
 }
 
+.about {
+    margin: 6%;
+    text-align: center;
+    width: 85%;
+}
+
+.hr {
+    width:85%;
+}
 
 .carousel-caption {
     padding-bottom: 0px;
@@ -99,16 +106,38 @@ img {
         height: 350px;
         background-size: 110%;
     }
+    .slide3 {
+        height: 350px;
+    }
     .slide5 {
         height: 350px;
     }
 }
 @media only screen and (max-width: 568px) {
     .slide {
-        background-position-y: -55px;
-        background-size: 170%;
+        background-position-y: -50px;
+        background-size: 150%;
     }
     .slide5 {
         height: 350px;
+        left: 0px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    .slide {
+        background-position-y: -50px;
+        background-size: 200%;
+    }
+    .slide1 {
+        left: -35%;
+        position: relative;
+    }
+    .slide3 {
+        position: relative;
+        left: -30%;
+    }
+    .slide5 {
+        left: -20%;
+        position: relative;
     }
 }

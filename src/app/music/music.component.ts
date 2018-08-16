@@ -5,7 +5,6 @@ import { NgxSpinnerService } from 'ngx-spinner';
 
 
 
-
 @Component({
   selector: 'app-music',
   templateUrl: './music.component.html',
@@ -322,9 +321,10 @@ export class MusicComponent implements OnInit {
   this.spinner.show();
 
   setTimeout(() => {
-  /** spinner ends after 5 seconds */
+  /** spinner ends after 3 seconds */
     this.spinner.hide();
     }, 3000);
   }
 
 }
+

@@ -45,7 +45,7 @@ h2 {
   // background-size: 275%;
   // background-position: center;
   background-color: black;
-  color: #CE1126;
+  color: rgb(206, 17, 38);
   font-size: 2em;
   padding: 5px 20px;
   font-family: 'Della Respira';
@@ -63,14 +63,14 @@ a {
 .navbar.navbar-expand-lg {
   text-align: center;
   color: white;
-  background-color: white;
-  border-top: 5px solid #CE1126;
-  border-bottom: 5px solid #CE1126;
+  background-color: black;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
 }
 
 .navbar-toggler-icon {
   float: right !important;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(206, 17, 38, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 span.mat-button-wrapper {

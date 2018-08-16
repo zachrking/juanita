@@ -1,19 +1,19 @@
-<ngx-spinner
-bdColor="rgba(51,51,51,0.8)"
+<ngx-spinner class='spinner'
+bdColor="rgba(255,255,255,0.0)"
 size="medium"
-color="#fff"
-loadingText="Loading..."
+color="#CE1126"
 type="ball-clip-rotate">
+<p style="font-size: 1000px; color: red">Loading...</p>
 </ngx-spinner>
 
 <div class="search-results"
     infiniteScroll
     scrollWindow = "true"
     infiniteScrollDistance="1"
-    infiniteScrollThrottle="250"
+    infiniteScrollThrottle="0"
     (scrolled)="onScroll()">
 
-    <mat-grid-list #grid rowHeight="1:1" >
+    <mat-grid-list #grid rowHeight="12:11" >
         <mat-grid-tile *ngFor="let video of videos1" >
             <mat-card class='card-back'>
                 <mat-card-header class='card-head' color="accent"></mat-card-header>
