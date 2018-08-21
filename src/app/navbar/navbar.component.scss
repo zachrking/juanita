@@ -9,12 +9,13 @@ h2 {
 .headers {
   text-align: center;
   background-image: url("../../assets/Images/JuanitaPhotos/mast1.jpg");
-  height: 200px;
+  background-size: cover;
+  height: 300px;
   background-position: center;
   color: white;
 }
 
-@media only screen and (max-width: 858px) {
+@media only screen and (max-width: 1130px) {
   .headers {
     height: 150px;
     background-size: 1500px;
