@@ -1,10 +1,5 @@
 
-// .carousel-indicators {
-//     position: relative !important;
-// }
-// .slide1.slide {
-//     height: 400px;
-// }
+
 // .slide2.slide {
 //     height: 400px;
 // }
@@ -26,19 +21,25 @@
 // .slide8.slide {
 //     width: 20%;
 // }
+.carousel-indicators {
+    display: none !important;
+}
+.carouselContainer {
+    width: 85%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 8%;
+}
 .slide {
 
     background-image: url("../../assets/Images/JuanitaPhotos/dj-paine-565507-unsplash.jpg");
+    background-position-y: -50px;
     background-size: cover;
-    background-position-y: -100px;
-    height: 500px; 
+    height: 400px; 
     text-align: center;
     color: white;
 }
 
-ngb-carosel {
-    width: 100%;
-}
 
 #rotate {
     transform: rotate(90deg);
@@ -102,9 +103,7 @@ img {
 @media only screen and (max-width: 858px) {
 
     .slide {
-        background-position-y: -60px;
         height: 350px;
-        background-size: 110%;
     }
     .slide3 {
         height: 350px;
@@ -113,10 +112,14 @@ img {
         height: 350px;
     }
 }
+@media only screen and (max-width: 707px) {
+    .slide {
+        background-size: 200%;
+    }
+}
 @media only screen and (max-width: 568px) {
     .slide {
-        background-position-y: -50px;
-        background-size: 150%;
+        
     }
     .slide5 {
         height: 350px;
@@ -125,8 +128,7 @@ img {
 }
 @media only screen and (max-width: 320px) {
     .slide {
-        background-position-y: -50px;
-        background-size: 200%;
+       
     }
     .slide1 {
         left: -35%;

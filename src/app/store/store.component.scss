@@ -1,18 +1,29 @@
 .mat-grid-list {
-    height: 100vh;
+    height: 120vh;
     // background-color: rgba(219, 173, 108, 0.5);
 }
 
-.mat-grid-tile {
-    border-bottom: 3px solid #006847;
-}
-
 .mat-card-image {
-    padding: 5%;
+    padding: 5% 5% 1% 5%;
 }
 
 .mat-card {
-    margin: 10%;
+    margin: 0% 5% 0% 5%;
+    background: white;
+    color: black;
+}
+
+.mat-card-title {
+    font-size: 1em;
+    font-weight: 800;
+}
+
+.mat-card-content {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    text-align: center;
+    height: 15vh;
+    overflow: scroll;
 }
 .albumImage {
     height: 100px;
@@ -24,4 +35,22 @@
     display: initial;
     justify-content: center;
     font-style: italic;
+}
+.mat-card-actions {
+    padding: 0;
+    text-align: center;
+}
+.mat-card-image {
+    margin: 0 -24px 0px -24px
+}
+.mat-raised-button {
+    background-color: #ce1126;  
+}
+.mat-card-header {
+    display: block;
+    font-size: 1.5em;
+    font-style: bold;
+    color: #006847;
+    text-align: center;
+    font-family: 'Della Respira'
 }

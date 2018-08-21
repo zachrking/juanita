@@ -45,9 +45,10 @@ h2 {
   // background-image: url("../../assets/Images/JuanitaPhotos/ivan-jevtic-rose.jpg");
   // background-size: 275%;
   // background-position: center;
-  background-color: black;
+  background-color: white;
   color: rgb(206, 17, 38);
   font-size: 2em;
+  font-weight: 800;
   padding: 5px 20px;
   font-family: 'Della Respira';
 }
@@ -64,9 +65,10 @@ a {
 .navbar.navbar-expand-lg {
   text-align: center;
   color: white;
-  background-color: black;
+  //background-color: black;
   border-top: 2px solid red;
   border-bottom: 2px solid red;
+  margin-bottom: 25px;
 }
 
 .navbar-toggler-icon {
