@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatSidenavModule, MatListModule, MatMenuModule, MatToolbarModule, MatCardModule, MatIconModule } from '@angular/material';
@@ -17,6 +17,9 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { StoreComponent } from './store/store.component';
+import { ContactComponent } from './contact/contact.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 
 
@@ -28,6 +31,7 @@ import { StoreComponent } from './store/store.component';
     MusicComponent,
     YoutubePipe,
     StoreComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -36,6 +40,7 @@ import { StoreComponent } from './store/store.component';
     MatButtonModule,
     MatGridListModule,
     MatToolbarModule,
+    MDBBootstrapModule.forRoot(),
     NgbModule.forRoot(),
     HttpModule,
     HttpClientModule,
@@ -48,7 +53,9 @@ import { StoreComponent } from './store/store.component';
     MatCardModule,
     InfiniteScrollModule,
     FlexLayoutModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     MatMenuModule,
@@ -58,6 +65,7 @@ import { StoreComponent } from './store/store.component';
     MatMenuModule,
     MatCardModule
   ],
+  schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
   bootstrap: [AppComponent]
 })

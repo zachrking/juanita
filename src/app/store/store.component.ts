@@ -57,7 +57,7 @@ export class StoreComponent implements OnInit {
     },
     {
       albumName: 'Vocal Power',
-      albumImage: './../../assets/Images/JuanitaPhotos/products/junaita-vocal-power.jpg'
+      albumImage: './../../assets/Images/JuanitaPhotos/products/junaita-vocal-power.jpg',
       albumDescription: `Sold internationally to speakers, singers, teachers and based upon Juanita’s twenty years of vocal teaching.`
     },
     {
@@ -70,25 +70,25 @@ export class StoreComponent implements OnInit {
     },
     {
       albumName: 'Mariposa',
-      albumImage: './../../assets/Images/JuanitaPhotos/products/mariposa.jpg'
+      albumImage: './../../assets/Images/JuanitaPhotos/products/mariposa.jpg',
       albumDescription: `An unforgettable journey into relaxation-a stress-free atmosphere reviewed by the Kennedy Center for the Arts as 
       "music that promotes cultural understanding and creates learning opportunities for children ages one to 101."`
     },
     {
       albumName: 'Mujeres',
-      albumImage: './../../assets/Images/JuanitaPhotos/products/mujeres.jpg'
+      albumImage: './../../assets/Images/JuanitaPhotos/products/mujeres.jpg',
       albumDescription: `Romantic Songs by Women Composers CD A newly released CD tribute to Mexican women composers Maria Grever and 
       Consuelo Velasquez including hits Besame Mucho and What a Difference a Day Makes, plus three new originals by Juanita Ulloa.`
     },
     {
       albumName: 'Canta Con Migo Vol 1',
-      albumImage: './../../assets/Images/JuanitaPhotos/products/canta-con-migo-1.jpg'
+      albumImage: './../../assets/Images/JuanitaPhotos/products/canta-con-migo-1.jpg',
       albumDescription: `Includes 14 karaoke song tracks where you can sing the hits. Performed with Juanita & Picante Ensemble live. 
       Was recently voted OUTSTANDING by the National Parent Council.`
     },
     {
       albumName: 'Canta Con Migo Vol 2',
-      albumImage: './../../assets/Images/JuanitaPhotos/products/canta-con-migo-2.jpg'
+      albumImage: './../../assets/Images/JuanitaPhotos/products/canta-con-migo-2.jpg',
       albumDescription: `Includes 14 karaoke song tracks where you can sing the hits. Performed with Juanita & Picante Ensemble live. 
       Was recently voted OUTSTANDING by the National Parent Council.
       `
